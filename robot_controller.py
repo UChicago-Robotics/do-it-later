@@ -6,7 +6,6 @@ from time import sleep
 import signal
 
 class RobotController:
-    
     def __init__(self, host, port):
         print(f"Listening on {host} : {port}")
 

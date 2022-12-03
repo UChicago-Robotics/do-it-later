@@ -103,8 +103,8 @@ try:
             # draw analog sticks
             # left stick
             draw_stick_l = vec(0, 0)
-            draw_stick_l.x = stick_l.x * math.sqrt(1 - 0.5 * stick_l.y ** 2) * 63 + 64
-            draw_stick_l.y = -stick_l.y * math.sqrt(1 - 0.5 * stick_l.x ** 2) * 63 + 64
+            draw_stick_l.x = stick_l.x * math.sqrt(1 - 0.5 * stick_l.y ** 2)
+            draw_stick_l.y = -stick_l.y * math.sqrt(1 - 0.5 * stick_l.x ** 2)
             if round(draw_stick_l.length(), 1) >= deadzone_stick:
                 vec_left = stick_l_center + draw_stick_l * stick_radius
                 stick_l = vec(0,0)
@@ -113,8 +113,8 @@ try:
 
             # right stick
             draw_stick_r = vec(0, 0)
-            draw_stick_r.x = stick_r.x * math.sqrt(1 - 0.5 * stick_r.y ** 2) * 63 + 64
-            draw_stick_r.y = -stick_r.y * math.sqrt(1 - 0.5 * stick_r.x ** 2) * 63 + 64
+            draw_stick_r.x = stick_r.x * math.sqrt(1 - 0.5 * stick_r.y ** 2)
+            draw_stick_r.y = -stick_r.y * math.sqrt(1 - 0.5 * stick_r.x ** 2)
             if round(draw_stick_r.length(), 1) >= deadzone_stick:
                 vec_right = stick_r_center + draw_stick_r * stick_radius
                 stick_r = vec(0,0)

@@ -57,7 +57,6 @@ stick_size = 20
 trigger_r = 0
 trigger_l = 0
 
-
 # game loop
 running = True
 try:
